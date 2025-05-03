@@ -1,0 +1,10 @@
+n = int(input("Massivin ölçüsünü daxil edin: "))
+A = []
+print("Massivin elementlərini daxil edin:")
+for i in range(n):
+    sətir = list(map(int, input(f"{i+1}-ci sətrin elementləri: ").split()))
+    A.append(sətir)
+cem = 0
+for i in range(n):
+    cem += A[i][i]
+print("Baş diaqonalın cəmi:", cem)
